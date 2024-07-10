@@ -43,7 +43,8 @@
 
 
 
-import React, { useState, useRef} from 'react';
+import React, { useState, useRef } from 'react';
+
 
 function Home() {
 
@@ -54,31 +55,28 @@ function Home() {
     event.preventDefault();
     const emailValue = emailRef.current.value;
     setEmail(emailValue);
-    console.log('Email submitted:', emailValue);
     
-  }
+    try {
+      const response = await fetch('http://localhost:3001/send-email', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({ email: emailValue }),
+      });
+
+      if (response.ok) {
+        alert("Thanks for Connecting!");
+        setEmail('');
+      } else {
+        console.error('Error sending email');
+      }
+    } catch (error) {
+      console.error('Error:', error);
+    }
+}
 
     return (
-      //     <>
-      // <div className="bg-[#000]">
-      //   <div className="relative isolate h-auto px-6 mt-3 pt-14 lg:px-8">
-      //     <div className="ml-40 pl-5 max-w-2xl py-32 sm:py-48 lg:py-56">
-      //       <div className="text-center  lg:-skew-y-6">
-      //         <h1 className="text-5xl font-bold tracking-tight text-white-900 sm:text-6xl transition-shadow">Hey! Welcome to my Website </h1>
-      //         <p className="mt-6 text-lg leading-8 text-gray-200">Please Feel Free to drop your email to connect with me.</p>
-      //         <div className="mt-10 flex items-center justify-center gap-x-6">
-      //           <input type='email' id='email' placeholder='Please Enter Your Email' className='rounded-md w-auto px-3.5 py-2.5 bg-slate-50'></input>
-      //           <a href="#" className="rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">Done</a>
-      //         </div>
-      //       </div>
-      //     </div>
-      //     <div className="absolute inset-x-0 top-[calc(100%-13rem)] -z-10 transform-gpu overflow-hidden blur-3xl sm:top-[calc(100%-30rem)]" aria-hidden="true">
-      //       <div className="relative left-[calc(50%+3rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 bg-gradient-to-tr from-[#171135] to-[#9089fc] opacity-30 sm:left-[calc(50%+36rem)] sm:w-[72.1875rem]"></div>
-      //     </div>
-      //   </div>
-      // </div>
-
-      //     </>
       <>
         {/* <div className="bg-[#000]"> */}
         <div>
@@ -114,4 +112,3 @@ function Home() {
 }
 
 export default Home;
-

@@ -1,13 +1,38 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import ProjectCard from './ProjectCard'; 
 const ProjectsPage = () => {
+
+  // const [projects, setProjects] = useState([]);
+
+  // useEffect(() => {
+  //   const fetchProject = async () => {
+  //     try{
+  //       const response = await fetch('https://api.github.com/users/devmit29/repos');
+  //       const data = await response.json();
+  //       console.log(data);
+  //       const projectsData = data.map(repo => ({
+  //         title: repo.name,
+  //         description: repo.description,
+  //         imageUrl: repo.owner.avatar_url,
+  //         tags: repo.topics || [],
+  //         link: repo.html_url,
+  //       }));
+  //       setProjects(projectsData);
+  //     }
+  //     catch (error) {
+  //       console.error("error in fetching:", error);
+  //     }
+  //   }
+  //   fetchProject();
+  // }, []);
+
   const projects = [
     {
-      title: 'Project 1',
+      title: 'To-Do App',
       description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, debitis?',
       imageUrl: 'https://images.unsplash.com/photo-1522199755839-a2bacb67c546?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTF8fGJsb2d8ZW58MHx8MHx8&auto=format&fit=crop&w=800&q=60',
-      tags: ['Macbook', 'Apple', 'Laptop'],
-      link: '',
+      tags: ['ReactJS', 'ContextAPI', 'Javescript'],
+      link: 'https://github.com/devmit29/to-do-app',
     },
     {
       title: 'Password Generator',
