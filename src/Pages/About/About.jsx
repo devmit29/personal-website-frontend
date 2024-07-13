@@ -8,7 +8,7 @@ function About() {
       </h1>
 
 
-      <div className="flex p-4 md:h-80 mb-10 flex-grow rounded-2xl flex-col items-center md:flex-row md:items-stretch gap-4 ">
+      <div className="flex p-4 xl:'h-80 mt-14 mb-10' flex-grow rounded-2xl flex-col items-center md:flex-row md:items-stretch gap-4 ">
         <div className='w-1/2 rounded-xl  p-1'>
           <img
             src="/SIRI2077.JPG" 
@@ -28,7 +28,7 @@ function About() {
       </div>
 
 
-      <div className="flex p-4 md:h-80 mt-14 mb-10 flex-grow rounded-2xl flex-col items-center md:flex-row-reverse md:items-stretch gap-4">
+      <div className="flex p-4 xl:'h-80 mt-14 mb-10' flex-grow rounded-2xl flex-col items-center md:flex-row-reverse md:items-stretch gap-4">
         <div className='w-1/2 rounded-xl p-1'>
           <img
             src="/image.jpg"
@@ -36,9 +36,9 @@ function About() {
             className="sm:h-80 sm:w-full object-cover rounded-xl"
           />
         </div>
-        <div className="sm:w-3/4 p-2 pt-0 text-center md:text-left">
+        <div className="w-3/4 p-2 pt-0 text-center md:text-left">
           <h2 className="text-3xl font-serif font-semibold text-white md:text-right mb-4">My Achievements</h2>
-          <ul className='text-[#F7F7FF]/85 pt-2 gap-1 list-disc text-xl'>
+          <ul className='text-[#F7F7FF]/85 text-left mx-auto pt-2 gap-1 list-disc text-xl'>
             <li className='my-1'>Headed Events and PR team of our college's annual Cultural Fest - Vivacity.</li>
             <li className='my-1'>Achieved distinction in Trinity College London's Grade 3 in "Electronic Keyboard" category.  </li>
             <li className='my-1'>Got 100% scolarship for Certification Course by OEMs like Adobe, Apple, WhiteHatJr etc. through RCAT Quizzathon-4 in Jaipur.</li>
@@ -50,7 +50,7 @@ function About() {
       </div>
 
 
-      <div className="flex p-4 md:h-80 mt-14 mb-10 flex-grow rounded-2xl flex-col items-center md:flex-row md:items-stretch gap-4 ">
+      <div className="flex p-4 xl:'h-80 mt-14 mb-10' flex-grow rounded-2xl flex-col items-center md:flex-row md:items-stretch gap-4 ">
         <div className='w-1/2 rounded-xl  p-1'>
           <img
             src="/Piano.jpg"
