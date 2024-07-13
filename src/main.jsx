@@ -6,31 +6,31 @@ import Layout from './Layout'
 import { About, Contact, Projects } from './Pages/index.js'
 import Home from './components/Home/Home'
 import { PageTransition } from '@steveeeie/react-page-transition'
+import router from './Routes.jsx'
 
-
-const router = createBrowserRouter([
-  {
-    path: '/',
-    element: <Layout />,
-    children: ([
-      {
-        path: '',
-        element: <Home/>
-      }, {
-        path: 'about-me',
-        element: <About/>
-      },
-      {
-        path: 'connect',
-        element: <Contact/>
-      },
-      {
-        path: 'projects',
-        element: <Projects/>
-      }
-    ])
-  }
-])
+// const router = createBrowserRouter([
+//   {
+//     path: '/',
+//     element: <Layout />,
+//     children: ([
+//       {
+//         path: '',
+//         element: <Home/>
+//       }, {
+//         path: 'about-me',
+//         element: <About/>
+//       },
+//       {
+//         path: 'connect',
+//         element: <Contact/>
+//       },
+//       {
+//         path: 'projects',
+//         element: <Projects/>
+//       }
+//     ])
+//   }
+// ])
 
 // const router = createBrowserRouter([
 //   createRoutesFromElements(

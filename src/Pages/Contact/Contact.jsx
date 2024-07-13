@@ -15,7 +15,7 @@ function Contact() {
       message,
     }
     try {
-      const response = await fetch('http://localhost:3001/api/contact', {
+      const response = await fetch('https://website-backend-aokp.onrender.com/api/contact', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
