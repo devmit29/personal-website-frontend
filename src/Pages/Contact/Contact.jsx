@@ -49,7 +49,7 @@ function Contact() {
             Name
           </label>
             <input
-              required="true"
+              required
               className="w-full px-3 py-2  text-gray-700 border rounded-lg focus:outline-none"
               type="text"
               id="name"
@@ -66,7 +66,7 @@ function Contact() {
             Email
           </label>
             <input
-              required="true"
+              required
             className="w-full px-3 py-2 text-gray-700 border rounded-lg focus:outline-none"
             type="email"
             id="email"
@@ -81,7 +81,7 @@ function Contact() {
             Phone Number
           </label>
             <input
-              required="true"
+              required
             className="w-full px-3 py-2 text-gray-700 border rounded-lg focus:outline-none"
             type="tel"
             id="mobile"
@@ -97,7 +97,7 @@ function Contact() {
             Message
           </label>
             <textarea 
-              required="true"
+            required
             className="w-full px-3 py-2 text-gray-700 border rounded-lg focus:outline-none"
             id="message"
             name="message"

@@ -44,7 +44,7 @@ const ProjectsPage = () => {
     {
       title: 'Project 3',
       description: 'Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-      imageUrl: 'https://https://www.google.com/url?sa=i&url=https%3A%2F%2Fcolorlib.com%2Fwp%2Fbest-ecommerce-website-builder%2F&psig=AOvVaw3Mv6rAsiRZRyBn9HB4ZjrQ&ust=1720171601334000&source=images&cd=vfe&opi=89978449&ved=0CBEQjRxqFwoTCOCIyN2IjYcDFQAAAAAdAAAAABAc.google.com/url?sa=i&url=https%3A%2F%2Fgithub.com%2Ftopics%2Fecommerce-website%3Fl%3Dhtml&psig=AOvVaw3Mv6rAsiRZRyBn9HB4ZjrQ&ust=1720171601334000&source=images&cd=vfe&opi=89978449&ved=0CBEQjRxqFwoTCOCIyN2IjYcDFQAAAAAdAAAAABAJ',
+      imageUrl: '',
       tags: ['Tag1', 'Tag2', 'Tag3'],
     },
   ];
