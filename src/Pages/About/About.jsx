@@ -8,12 +8,12 @@ function About() {
       </h1>
 
 
-      <div className="flex p-4 xl:'h-80 mt-14 mb-10' flex-grow rounded-2xl flex-col items-center md:flex-row md:items-stretch gap-4 ">
-        <div className='w-1/2 rounded-xl  p-1'>
+      <div className="flex p-2 lg:'h-80 mt-14 mb-10' flex-grow rounded-2xl flex-col items-center md:flex-row md:items-stretch gap-4 ">
+        <div className='w-1/2 max-sm:w-full max-md:3/4 rounded-xl  p-1'>
           <img
             src="/SIRI2077.JPG" 
             alt="Dev Mittal"
-            className="sm:h-80 sm:w-full rounded-xl"
+            className="sm:h-80 lg:h-full sm:w-full object-cover rounded-xl"
           />
         </div>
         <div className="sm:w-3/4 p-2 pt-0 text-center md:text-left">
@@ -28,12 +28,12 @@ function About() {
       </div>
 
 
-      <div className="flex p-4 xl:'h-80 mt-14 mb-10' flex-grow rounded-2xl flex-col items-center md:flex-row-reverse md:items-stretch gap-4">
-        <div className='w-1/2 rounded-xl p-1'>
+      <div className="flex p-4 lg:'h-80 mt-14 mb-10' flex-grow rounded-2xl flex-col items-center md:flex-row-reverse md:items-stretch gap-4">
+        <div className='w-1/2 max-sm:w-full max-md:3/4 rounded-xl p-1'>
           <img
             src="/image.jpg"
             alt="Coding"
-            className="sm:h-80 sm:w-full object-cover rounded-xl"
+            className="sm:h-80 lg:h-full sm:w-full object-cover rounded-xl"
           />
         </div>
         <div className="w-3/4 p-2 pt-0 text-center md:text-left">
@@ -50,12 +50,12 @@ function About() {
       </div>
 
 
-      <div className="flex p-4 xl:'h-80 mt-14 mb-10' flex-grow rounded-2xl flex-col items-center md:flex-row md:items-stretch gap-4 ">
-        <div className='w-1/2 rounded-xl  p-1'>
+      <div className="flex p-4 lg:'h-80 mt-14 mb-10' flex-grow rounded-2xl flex-col items-center md:flex-row md:items-stretch gap-4 ">
+        <div className='w-1/2 max-sm:w-full max-md:3/4 rounded-xl  p-1'>
           <img
             src="/Piano.jpg"
             alt="Hobbies"
-            className="sm:h-80 sm:w-full object-cover rounded-xl"
+            className="sm:h-80 lg:h-full sm:w-full object-cover rounded-xl"
             />
         </div>
         <div className="sm:w-3/4 p-2 pt-0 text-center md:text-left">

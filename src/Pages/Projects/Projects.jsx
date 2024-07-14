@@ -28,11 +28,11 @@ const ProjectsPage = () => {
 
   const projects = [
     {
-      title: 'To-Do App',
-      description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, debitis?',
-      imageUrl: 'https://images.unsplash.com/photo-1522199755839-a2bacb67c546?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTF8fGJsb2d8ZW58MHx8MHx8&auto=format&fit=crop&w=800&q=60',
-      tags: ['ReactJS', 'ContextAPI', 'Javescript'],
-      link: 'https://github.com/devmit29/to-do-app',
+      title: 'E-commerce (Food)',
+      description: 'I was the Project Manager in developing end-to-end Full-Stack website for capmus Parlor for seamless delivery system.',
+      imageUrl: 'Amul.png',
+      tags: ['ReactJS', 'NodeJS', 'Express', 'MongoDB'],
+      link: 'https://github.com/devmit29/Amul-Parlor',
     },
     {
       title: 'Password Generator',
@@ -42,11 +42,13 @@ const ProjectsPage = () => {
       link: 'https://github.com/devmit29/Password-Generator',
     },
     {
-      title: 'Project 3',
-      description: 'Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-      imageUrl: '',
-      tags: ['Tag1', 'Tag2', 'Tag3'],
+      title: 'To-Do App',
+      description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, debitis?',
+      imageUrl: 'https://images.unsplash.com/photo-1522199755839-a2bacb67c546?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTF8fGJsb2d8ZW58MHx8MHx8&auto=format&fit=crop&w=800&q=60',
+      tags: ['ReactJS', 'ContextAPI', 'Javescript'],
+      link: 'https://github.com/devmit29/to-do-app',
     },
+    
   ];
 
   return (
