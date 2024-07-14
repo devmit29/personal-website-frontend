@@ -1,5 +1,5 @@
 import React from 'react'
-import { NavLink } from 'react-router-dom'
+import { Link, NavLink } from 'react-router-dom'
 
 function Header() {
 
@@ -116,14 +116,14 @@ function Header() {
         </ul>
       </div>
       <div className="flex items-center justify-end lg:w-auto lg:ml-auto">
-        <a 
-            href="/Dev-Mittal-Resume.pdf" 
+        <Link 
+            to="https://drive.google.com/file/d/1paKB2CbPOg3S6tdZ9Hg67onHEfRR5KwR/view?usp=drive_link" 
             target="_blank" 
             rel="noopener noreferrer" 
             className="rounded-3xl bg-[#279AF1] px-4 py-2 text-white font-semibold"
           >
             Resume
-        </a>
+        </Link>
       </div>
     </div>
   </nav>

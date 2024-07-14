@@ -35,7 +35,7 @@ const ProjectsPage = () => {
       link: 'https://github.com/devmit29/Amul-Parlor',
     },
     {
-      title: 'Password Generator',
+      title: 'Currency Convertor',
       description: 'A simple project which fetches currency conversion rate and country flag using API calls',
       imageUrl: '/proj2.png',
       tags: ['Javescript', 'HTML', 'CSS'],
