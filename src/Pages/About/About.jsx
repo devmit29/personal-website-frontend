@@ -33,7 +33,7 @@ function About() {
           <img
             src="/image.jpg"
             alt="Coding"
-            className="sm:h-80 lg:h-full sm:w-full object-cover rounded-xl"
+            className="sm:h-80 lg:h-96 sm:w-full object-fill rounded-xl"
           />
         </div>
         <div className="w-3/4 p-2 pt-0 text-center md:text-left">
