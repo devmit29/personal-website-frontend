@@ -30,7 +30,7 @@ const ProjectsPage = () => {
     {
       title: 'E-commerce (Food)',
       description: 'I was the Project Manager in developing end-to-end Full-Stack website for capmus Parlor for seamless delivery system.',
-      imageUrl: 'Amul.png',
+      imageUrl: 'Amul-min.png',
       tags: ['ReactJS', 'NodeJS', 'Express', 'MongoDB'],
       link: 'https://github.com/devmit29/Amul-Parlor',
     },

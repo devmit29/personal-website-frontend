@@ -11,7 +11,7 @@ function About() {
       <div className="flex p-2 lg:'h-80 mt-14 mb-10' flex-grow rounded-2xl flex-col items-center md:flex-row md:items-stretch gap-4 ">
         <div className='w-1/2 max-sm:w-full max-md:3/4 rounded-xl  p-1'>
           <img
-            src="/SIRI2077.JPG" 
+            src="/SIRI2077-min.JPG" 
             alt="Dev Mittal"
             className="sm:h-80 lg:h-full sm:w-full object-cover rounded-xl"
           />
@@ -31,7 +31,7 @@ function About() {
       <div className="flex p-4 lg:'h-80 mt-14 mb-10' flex-grow rounded-2xl flex-col items-center md:flex-row-reverse md:items-stretch gap-4">
         <div className='w-1/2 max-sm:w-full max-md:3/4 rounded-xl p-1'>
           <img
-            src="/image.jpg"
+            src="/image-min.jpg"
             alt="Coding"
             className="sm:h-80 lg:h-96 sm:w-full object-fill rounded-xl"
           />
@@ -53,7 +53,7 @@ function About() {
       <div className="flex p-4 lg:'h-80 mt-14 mb-10' flex-grow rounded-2xl flex-col items-center md:flex-row md:items-stretch gap-4 ">
         <div className='w-1/2 max-sm:w-full max-md:3/4 rounded-xl  p-1'>
           <img
-            src="/Piano.jpg"
+            src="/Piano-min.jpg"
             alt="Hobbies"
             className="sm:h-80 lg:h-full sm:w-full object-cover rounded-xl"
             />
