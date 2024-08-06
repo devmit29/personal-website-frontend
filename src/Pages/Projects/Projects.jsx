@@ -30,7 +30,7 @@ const ProjectsPage = () => {
     {
       title: 'E-commerce (Food)',
       description: 'I was the Project Manager in developing end-to-end Full-Stack website for capmus Parlor for seamless delivery system.',
-      imageUrl: 'Amul-min.png',
+      imageUrl: '/Amul-min.png',
       tags: ['ReactJS', 'NodeJS', 'Express', 'MongoDB'],
       link: 'https://github.com/devmit29/Amul-Parlor',
     },
@@ -39,14 +39,21 @@ const ProjectsPage = () => {
       description: 'A simple project which fetches currency conversion rate and country flag using API calls',
       imageUrl: '/proj2.png',
       tags: ['Javescript', 'HTML', 'CSS'],
-      link: 'https://github.com/devmit29/Password-Generator',
+      link: 'https://github.com/devmit29/JsSmallProjects/tree/main/Curruency%20Convertor',
     },
     {
       title: 'To-Do App',
-      description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, debitis?',
+      description: 'A Basic To-Do app which stores Tasks in LocalStorage of the Browser',
       imageUrl: 'https://images.unsplash.com/photo-1522199755839-a2bacb67c546?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTF8fGJsb2d8ZW58MHx8MHx8&auto=format&fit=crop&w=800&q=60',
       tags: ['ReactJS', 'ContextAPI', 'Javescript'],
       link: 'https://github.com/devmit29/to-do-app',
+    },
+    {
+      title: 'Rock Paper Scissors',
+      description: 'A Basic JS game of Rock Paper Scissors',
+      imageUrl: '/RPS.png',
+      tags: ['HTML', 'CSS', 'Javescript'],
+      link: 'https://github.com/devmit29/JsSmallProjects/tree/main/RockPaperScissors',
     },
     
   ];

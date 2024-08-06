@@ -2,7 +2,7 @@ import React from 'react';
 
 const ProjectCard = ({ imageUrl, title, description, tags, link }) => {
   return (
-    <div className="w-[324px] hover:opacity-90 rounded-xl bg-slate-50 bg-blend-difference border-[#F7F7FF] z-50 justify-center mx-auto">
+    <div className="w-[324px] xl:w-[372px] hover:opacity-90 hover:-translate-y-2 rounded-xl bg-slate-50 bg-blend-difference border-[#F7F7FF] z-50 justify-center mx-auto">
       <img
         src={imageUrl}
         alt={title}
@@ -12,8 +12,8 @@ const ProjectCard = ({ imageUrl, title, description, tags, link }) => {
         <h1 className="inline-flex items-center text- text-black font-semibold">
           {title}{' '}
         </h1>
-        <p className="mt-3 text-sm text-gray-800">{description}</p>
-        <div className="mt-4 ">
+        <p className="mt-3 min-h-[70px] text-sm text-gray-800">{description}</p>
+        <div className="mt-4 min-h-[70px]">
           {tags.map((tag, index) => (
             <span
               key={index}

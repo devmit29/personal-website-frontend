@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState, useId } from 'react'
 
 function Contact() {
   const [name, setName] = useState('');
@@ -37,6 +37,12 @@ function Contact() {
     }
   }
 
+  const nameId = useId()
+  const emailId = useId()
+  const phoneId = useId()
+  const msgId = useId()
+
+
   return (
     <>
       <div className="h-max flex flex-col items-center p-4">
@@ -45,14 +51,14 @@ function Contact() {
       
       <form onSubmit={handleSubmit} className="w-full max-w-lg bg-white/40 p-8 rounded-3xl shadow-md">
         <div className="mb-4">
-          <label className="block text-blue-50 text-md font-bold mb-2" htmlFor="name">
+          <label className="block text-blue-50 text-md font-bold mb-2" htmlFor={nameId}>
             Name
           </label>
             <input
               required
               className="w-full px-3 py-2  text-gray-700 border rounded-lg focus:outline-none"
               type="text"
-              id="name"
+              id={nameId}
               name="name"
               placeholder="Your Name"
               value={name}
@@ -62,14 +68,14 @@ function Contact() {
         </div>
 
         <div className="mb-4">
-          <label className="block text-blue-59 text-md font-bold mb-2" htmlFor="email">
+          <label className="block text-blue-59 text-md font-bold mb-2" htmlFor={emailId}>
             Email
           </label>
             <input
               required
             className="w-full px-3 py-2 text-gray-700 border rounded-lg focus:outline-none"
             type="email"
-            id="email"
+            id="emailId"
             name="email"
               placeholder="Your Email"
               value={email}
@@ -77,14 +83,14 @@ function Contact() {
           />
           </div>
           <div className="mb-4">
-          <label className="block text-blue-59 text-md font-bold mb-2" htmlFor="email">
+          <label className="block text-blue-59 text-md font-bold mb-2" htmlFor={phoneId}>
             Phone Number
           </label>
             <input
               required
             className="w-full px-3 py-2 text-gray-700 border rounded-lg focus:outline-none"
             type="tel"
-            id="mobile"
+            id={phoneId}
             name="mobile"
               placeholder="Phone Number"
               value={phone}
@@ -93,13 +99,13 @@ function Contact() {
         </div>
 
         <div className="mb-4">
-          <label className="block text-blue-50 text-md font-bold mb-2" htmlFor="message">
+          <label className="block text-blue-50 text-md font-bold mb-2" htmlFor={msgId}>
             Message
           </label>
             <textarea 
             required
             className="w-full px-3 py-2 text-gray-700 border rounded-lg focus:outline-none"
-            id="message"
+            id={msgId}
             name="message"
             placeholder="Your Message"
               rows="4"
