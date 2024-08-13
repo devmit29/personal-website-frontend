@@ -26,6 +26,7 @@ function Home() {
         setEmail('');
       } else {
         console.error('Error sending email');
+        setEmail('');
       }
     } catch (error) {
       console.error('Error:', error);
@@ -48,7 +49,7 @@ function Home() {
                 <div className="mt-10 flex flex-col sm:flex-row items-center justify-center gap-4">
                   <form id='my-form' onSubmit={handleSubmit} className='flex gap-2 flex-col sm:flex-row'>
                     <input
-                      ref={emailRef} name='email' type="email" id="email" placeholder="Please Enter Your Email" className="rounded-md w-auto sm:w-auto px-3.5 py-2.5 bg-slate-50" />
+                      ref={emailRef} name='email' type="email" id="email" placeholder="Please Enter Your Email" className="rounded-md text-black w-auto sm:w-auto px-3.5 py-2.5 bg-slate-50" />
                     <button
                       type="submit" className="rounded-md max-sm:w-1/2 max-sm:m-auto bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">
                       Done
