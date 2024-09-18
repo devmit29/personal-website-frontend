@@ -45,7 +45,7 @@ function Contact() {
 
   return (
     <>
-      <div className="h-max flex flex-col items-center p-4">
+      <div className="h-max flex animate-appear flex-col items-center p-4">
         <h1 className="text-3xl rounded-3xl border-[#F7F7FF] font-sans border-2 font-bold text-center w-fit mx-auto px-4 py-4 my-8">
         Connect with Me</h1>
       

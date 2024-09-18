@@ -2,13 +2,13 @@ import React from 'react'
 
 function About() {
   return (
-    <div className="container mx-auto min-h-fit px-auto mb-auto pt-10 pb-4">
+    <div className="container mx-auto min-h-fit px-auto mb-auto animate-appear pt-10 pb-4">
       <h1 className="text-3xl rounded-3xl border-[#F7F7FF] font-sans border-2 font-bold text-center w-fit mx-auto px-4 py-4 my-8">
         About Me
       </h1>
 
 
-      <div className="flex p-2 lg:'h-80 mt-14 mb-10' flex-grow rounded-2xl flex-col items-center md:flex-row md:items-stretch gap-4 ">
+      <div className="flex p-2 lg:'h-80 mt-14 mb-10' animate-my flex-grow rounded-2xl flex-col items-center md:flex-row md:items-stretch gap-4 ">
         <div className='w-1/2 max-sm:w-full max-md:3/4 rounded-xl  p-1'>
           <img
             src="/SIRI2077-min.JPG" 

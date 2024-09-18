@@ -37,7 +37,7 @@ function Home() {
       <>
         {/* <div className="bg-[#000]"> */}
         <div>
-          <div className="relative isolate h-auto px-4 sm:px-6 mt-3 pt-14 lg:px-8">
+          <div className="relative isolate h-auto px-4 sm:px-6 mt-3 pt-14 animate-appear lg:px-8 ">
             <div className="max-w-2xl mx-auto py-40 sm:py-48">
               <div className="text-center sm:-skew-y-3">
                 <h1 className="text-5xl sm:text-6xl lg:text-6xl font-bold tracking-tight text-white transition-shadow">

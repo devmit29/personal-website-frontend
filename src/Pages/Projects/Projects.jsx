@@ -59,7 +59,7 @@ const ProjectsPage = () => {
   ];
 
   return (
-    <div className="container mx-auto px-4 pt-10 pb-28">
+    <div className="container mx-auto px-4 animate-appear pt-10 pb-28">
         <h1 className="text-3xl rounded-3xl border-[#F7F7FF] font-sans border-2 font-bold text-center w-fit mx-auto px-4 py-4 my-8">Projects</h1>
       <div className="grid grid-cols-1 mx-auto px-auto md:grid-cols-2 lg:grid-cols-3 gap-8 pt-2">
         {projects.map((project, index) => (
