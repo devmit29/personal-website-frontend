@@ -32,7 +32,16 @@ const ProjectsPage = () => {
       description: 'I was the Project Manager in developing end-to-end Full-Stack website for capmus Parlor for seamless delivery system.',
       imageUrl: '/Amul-min.png',
       tags: ['ReactJS', 'NodeJS', 'Express', 'MongoDB'],
-      link: 'https://github.com/devmit29/Amul-Parlor',
+      link: 'https://ecom-frontend-4x7f.onrender.com',
+      linkTitle: 'Webstie Link',
+    },
+    {
+      title: 'Project Management Tool',
+      description: 'Developed an end-to-end project management tool for companies to manage their projects and tasks.',
+      imageUrl: '/Project_Management.png',
+      tags: ['Next.js', 'Hono', 'Appwrite', 'TailwindCSS'],
+      link: 'https://jira-clone-virid-five.vercel.app',
+      linkTitle: 'Webstie Link',
     },
     {
       title: 'Currency Convertor',
@@ -40,6 +49,7 @@ const ProjectsPage = () => {
       imageUrl: '/proj2.png',
       tags: ['Javescript', 'HTML', 'CSS'],
       link: 'https://github.com/devmit29/JsSmallProjects/tree/main/Curruency%20Convertor',
+      linkTitle: 'GitHub Link',
     },
     {
       title: 'To-Do App',
@@ -47,6 +57,7 @@ const ProjectsPage = () => {
       imageUrl: 'https://images.unsplash.com/photo-1522199755839-a2bacb67c546?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTF8fGJsb2d8ZW58MHx8MHx8&auto=format&fit=crop&w=800&q=60',
       tags: ['ReactJS', 'ContextAPI', 'Javescript'],
       link: 'https://github.com/devmit29/to-do-app',
+      linkTitle: 'GitHub Link',
     },
     {
       title: 'Rock Paper Scissors',
@@ -54,6 +65,7 @@ const ProjectsPage = () => {
       imageUrl: '/RPS.png',
       tags: ['HTML', 'CSS', 'Javescript'],
       link: 'https://github.com/devmit29/JsSmallProjects/tree/main/RockPaperScissors',
+      linkTitle: 'GitHub Link',
     },
     
   ];

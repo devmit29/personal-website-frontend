@@ -1,6 +1,6 @@
 import React from 'react';
 
-const ProjectCard = ({ imageUrl, title, description, tags, link }) => {
+const ProjectCard = ({ imageUrl, title, description, tags, link, linkTitle }) => {
   return (
     <div className="w-[324px] xl:w-[372px] hover:opacity-90 hover:-translate-y-4 rounded-xl bg-slate-50 bg-blend-difference border-[#F7F7FF] z-50 justify-center mx-auto">
       <img
@@ -29,7 +29,7 @@ const ProjectCard = ({ imageUrl, title, description, tags, link }) => {
             href={link} 
             target='_blank'
         >
-          GitHub Link
+          {linkTitle}
         </a>
           </button>
       </div>
