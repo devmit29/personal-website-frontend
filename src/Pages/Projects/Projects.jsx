@@ -33,7 +33,7 @@ const ProjectsPage = () => {
       imageUrl: '/Amul-min.png',
       tags: ['ReactJS', 'NodeJS', 'Express', 'MongoDB'],
       link: 'https://ecom-frontend-4x7f.onrender.com',
-      linkTitle: 'Webstie Link',
+      linkTitle: 'Website Link',
     },
     {
       title: 'Project Management Tool',
@@ -41,7 +41,7 @@ const ProjectsPage = () => {
       imageUrl: '/Project_Management.png',
       tags: ['Next.js', 'Hono', 'Appwrite', 'TailwindCSS'],
       link: 'https://jira-clone-virid-five.vercel.app',
-      linkTitle: 'Webstie Link',
+      linkTitle: 'Website Link',
     },
     {
       title: 'Currency Convertor',
