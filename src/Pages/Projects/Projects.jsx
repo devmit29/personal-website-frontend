@@ -39,9 +39,17 @@ const ProjectsPage = () => {
       title: 'Project Management Tool',
       description: 'Developed an end-to-end project management tool for companies to manage their projects and tasks.',
       imageUrl: '/Project_Management.png',
-      tags: ['Next.js', 'Hono', 'Appwrite', 'TailwindCSS'],
+      tags: ['Next.js', 'Hono', 'Appwrite', 'TailwindCSS', 'OAuth'],
       link: 'https://jira-clone-virid-five.vercel.app',
       linkTitle: 'Website Link',
+    },
+    {
+      title: 'Food App (Frontend Only)',
+      description: 'Developed a frontend Food delivery website.',
+      imageUrl: '/front-end.webp',
+      tags: ['HTML', 'CSS', 'Javascript'],
+      link: 'https://github.com/devmit29/food-app-frontend',
+      linkTitle: 'Github Link',
     },
     {
       title: 'Currency Convertor',
@@ -71,10 +79,11 @@ const ProjectsPage = () => {
   ];
 
   return (
-    <div className="container mx-auto px-4 animate-appear pt-10 pb-28">
+    <div className="container max-w-[1440px] mx-auto px-4 animate-appear pt-10 pb-28">
         <h1 className="text-3xl rounded-3xl border-[#F7F7FF] font-sans border-2 font-bold text-center w-fit mx-auto px-4 py-4 my-8">Projects</h1>
-      <div className="grid grid-cols-1 mx-auto px-auto md:grid-cols-2 lg:grid-cols-3 gap-8 pt-2">
-        {projects.map((project, index) => (
+      {/* <div className="grid grid-cols-1 mx-auto px-auto md:grid-cols-2 lg:grid-cols-3 gap-8 pt-2"> */}
+      <div className="flex flex-wrap justify-around gap-x-1 gap-y-8 mx-auto pt-2">  
+      {projects.map((project, index) => (
           <ProjectCard key={index} {...project} />
         ))}
       </div>

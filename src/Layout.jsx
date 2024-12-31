@@ -4,11 +4,11 @@ import { Header, Footer } from './components/index.js'
 
 function Layout() {
   return (
-    <>
+    <div className='mx-2' >
       <Header />
       <Outlet />
       <Footer />
-    </>
+    </div>
   )
 }
 

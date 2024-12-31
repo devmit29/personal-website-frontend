@@ -4,8 +4,14 @@
 
 :root{
     color: #fff;
-    height: 10px;
+    width: 100vw;
 }
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
 body{
     background: rgb(20,0,50);
     background: linear-gradient(135deg, rgba(20,0,50,1) 19%, rgba(0,0,0,1) 67%, rgba(18,0,75,1) 94%);   

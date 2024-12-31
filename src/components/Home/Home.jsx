@@ -36,12 +36,12 @@ function Home() {
     return (
       <>
         {/* <div className="bg-[#000]"> */}
-        <div>
-          <div className="relative isolate h-auto px-4 sm:px-6 mt-3 pt-14 animate-appear lg:px-8 ">
+        <div className='flex justify-center items-center h-screen'>
+          <div className=" animate-appear lg:px-8 ">
             <div className="max-w-2xl mx-auto py-40 sm:py-48">
               <div className="text-center sm:-skew-y-3">
                 <h1 className="text-5xl sm:text-6xl lg:text-6xl font-bold tracking-tight text-white transition-shadow">
-                  Hey! Welcome to my Website
+                  Hey! I am Dev Mittal
                 </h1>
                 <p className="mt-6 text-base sm:text-lg leading-8 text-gray-200">
                   Please Feel Free to drop your email to connect with me.

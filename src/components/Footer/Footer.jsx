@@ -3,80 +3,6 @@ import { Link, NavLink } from 'react-router-dom'
 
 function Footer() {
   return (
-//     <footer className="bg-[#000] text-gray-200 py-8 z-50">
-//   <div className="container mx-auto px-4 lg:px-8">
-//     <div className="flex flex-col lg:flex-row justify-between items-center">
-//       <div className="text-center lg:text-left mb-6 lg:mb-0">
-//         <h2 className="text-2xl font-bold text-white mb-4">Dev Mittal</h2>
-//         <p className="text-gray-400">I love to explore and learn new things quickly.</p>
-//       </div>
-//       <div className="flex flex-col lg:flex-row items-center lg:space-x-8 mb-6 lg:mb-0">
-//         {/* <ul className="flex flex-col lg:flex-row space-y-4 lg:space-y-0 lg:space-x-8">
-//           <li>
-//             <NavLink 
-//               to="/" 
-//               className={({ isActive }) => 
-//                 `rounded-lg ${isActive ? 'text-[#EA526F]' : 'text-gray-400'} px-2 pr-2 py-2 cursor-pointer`
-//               }
-//             >
-//               Home
-//             </NavLink>
-//           </li>
-//           <li>
-//             <NavLink 
-//               to="/about-me" 
-//               className={({ isActive }) => 
-//                 `rounded-lg ${isActive ? 'text-[#EA526F]' : 'text-gray-400'} px-2 pr-2 py-2 cursor-pointer`
-//               }
-//             >
-//               About
-//             </NavLink>
-//           </li>
-//           <li>
-//             <NavLink 
-//               to="/projects" 
-//               className={({ isActive }) => 
-//                 `rounded-lg ${isActive ? 'text-[#EA526F]' : 'text-gray-400'} px-2 pr-2 py-2 cursor-pointer`
-//               }
-//             >
-//               Projects
-//             </NavLink>
-//           </li>
-//           <li>
-//             <NavLink 
-//               to="/connect" 
-//               className={({ isActive }) => 
-//                 `rounded-lg ${isActive ? 'text-[#EA526F]' : 'text-gray-400'} px-2 pr-2 py-2 cursor-pointer`
-//               }
-//             >
-//               Connect
-//             </NavLink>
-//           </li>
-//         </ul> */}
-//       </div>
-//       <div className="flex space-x-4">
-//         <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white">
-//           <svg className="w-6 h-6" fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-//             <path d="M22.675 0h-21.35c-.733 0-1.325.591-1.325 1.325v21.351c0 .733.591 1.325 1.325 1.325h11.497v-9.294h-3.127v-3.622h3.127v-2.671c0-3.1 1.893-4.789 4.659-4.789 1.325 0 2.463.099 2.795.143v3.24l-1.917.001c-1.504 0-1.794.715-1.794 1.762v2.314h3.587l-.467 3.622h-3.12v9.294h6.116c.733 0 1.325-.591 1.325-1.325v-21.351c0-.733-.591-1.325-1.325-1.325z"/>
-//           </svg>
-//         </a>
-//         <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white">
-//           <svg className="w-6 h-6" fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-//             <path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.61 1.798-1.574 2.165-2.723-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-2.723 0-4.926 2.204-4.926 4.923 0 .386.043.763.127 1.124-4.092-.205-7.719-2.165-10.148-5.144-.424.727-.666 1.574-.666 2.475 0 1.709.87 3.216 2.188 4.099-.807-.026-1.566-.247-2.229-.616v.061c0 2.388 1.697 4.379 3.946 4.832-.413.111-.849.171-1.296.171-.317 0-.626-.03-.928-.086.626 1.956 2.444 3.379 4.6 3.418-1.684 1.32-3.808 2.106-6.115 2.106-.398 0-.79-.023-1.177-.068 2.179 1.394 4.768 2.209 7.548 2.209 9.057 0 14.009-7.502 14.009-14.007 0-.213-.005-.426-.014-.637.961-.693 1.796-1.56 2.457-2.548l-.047-.02z"/>
-//           </svg>
-//         </a>
-//         <a href="https://www.linkedin.com/in/devmit29" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white cursor-pointer">
-//           <svg className="w-6 h-6" fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-//             <path d="M22.225 0h-20.451c-.978 0-1.774.796-1.774 1.774v20.451c0 .978.796 1.774 1.774 1.774h20.451c.978 0 1.774-.796 1.774-1.774v-20.451c0-.978-.796-1.774-1.774-1.774zm-15.265 20.451h-3.034v-10.4h3.034v10.4zm-1.517-11.82c-1.03 0-1.864-.834-1.864-1.865 0-1.03.834-1.864 1.864-1.864 1.03 0 1.864.834 1.864 1.864 0 1.03-.834 1.865-1.864 1.865zm13.782 11.82h-3.034v-5.293c0-1.261-.025-2.884-1.758-2.884-1.759 0-2.028 1.376-2.028 2.792v5.385h-3.034v-10.4h2.911v1.421h.042c.406-.768 1.398-1.576 2.877-1.576 3.074 0 3.643 2.023 3.643 4.653v6.901z"/>
-//           </svg>
-//         </a>
-//       </div>
-//     </div>
-//     <div className="mt-8 text-start text-gray-400 text-sm">
-//       © 2024 My Website. All rights reserved.
-//     </div>
-//   </div>
-    // </footer>
     <footer className=" text-gray-200 mt-8 pt-1 pb-2">
       <hr className="h-px my-2 bg-[#55626c] border-0"/>
     <div className="container mx-auto px-4 md:px-8">
@@ -85,50 +11,8 @@ function Footer() {
           <h2 className="text-2xl font-bold text-white mb-2 mt-2">Dev Mittal</h2>
           <p className="text-gray-400">I love to explore and learn new things quickly.</p>
         </div>
-        <div className="flex flex-col md:flex-row items-center md:space-x-8 mb-6 md:mb-0 w-full md:w-auto">
-          {/* <ul className="flex flex-col lg:flex-row space-y-4 lg:space-y-0 lg:space-x-8">
-            <li>
-              <NavLink 
-                to="/" 
-                className={({ isActive }) => 
-                  `rounded-lg ${isActive ? 'text-[#EA526F]' : 'text-gray-400'} px-2 pr-2 py-2 cursor-pointer`
-                }
-              >
-                Home
-              </NavLink>
-            </li>
-            <li>
-              <NavLink 
-                to="/about-me" 
-                className={({ isActive }) => 
-                  `rounded-lg ${isActive ? 'text-[#EA526F]' : 'text-gray-400'} px-2 pr-2 py-2 cursor-pointer`
-                }
-              >
-                About
-              </NavLink>
-            </li>
-            <li>
-              <NavLink 
-                to="/projects" 
-                className={({ isActive }) => 
-                  `rounded-lg ${isActive ? 'text-[#EA526F]' : 'text-gray-400'} px-2 pr-2 py-2 cursor-pointer`
-                }
-              >
-                Projects
-              </NavLink>
-            </li>
-            <li>
-              <NavLink 
-                to="/connect" 
-                className={({ isActive }) => 
-                  `rounded-lg ${isActive ? 'text-[#EA526F]' : 'text-gray-400'} px-2 pr-2 py-2 cursor-pointer`
-                }
-              >
-                Connect
-              </NavLink>
-            </li>
-          </ul> */}
-        </div>
+        {/* <div className="flex flex-col md:flex-row items-center md:space-x-8 mb-6 md:mb-0 w-full md:w-auto">
+        </div> */}
         <div className="flex space-x-4 w-full md:w-auto justify-center md:justify-start">
             <Link to="https://github.com/DevMit29" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white">
               <svg className="w-6 h-6" fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
@@ -151,13 +35,12 @@ function Footer() {
             <svg className="w-6 h-6" fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
               <path d="M22.225 0h-20.451c-.978 0-1.774.796-1.774 1.774v20.451c0 .978.796 1.774 1.774 1.774h20.451c.978 0 1.774-.796 1.774-1.774v-20.451c0-.978-.796-1.774-1.774-1.774zm-15.265 20.451h-3.034v-10.4h3.034v10.4zm-1.517-11.82c-1.03 0-1.864-.834-1.864-1.865 0-1.03.834-1.864 1.864-1.864 1.03 0 1.864.834 1.864 1.864 0 1.03-.834 1.865-1.864 1.865zm13.782 11.82h-3.034v-5.293c0-1.261-.025-2.884-1.758-2.884-1.759 0-2.028 1.376-2.028 2.792v5.385h-3.034v-10.4h2.911v1.421h.042c.406-.768 1.398-1.576 2.877-1.576 3.074 0 3.643 2.023 3.643 4.653v6.901z"/>
             </svg>
-            </Link>
-            <Link to="https://www.youtube.com/@devmit29" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white cursor-pointer">
-  <svg className="w-6 h-6" fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-    <path d="M23.499 6.203c-.291-1.096-1.148-1.952-2.243-2.243-1.986-.536-9.956-.536-9.956-.536s-7.97 0-9.956.536c-1.096.291-1.952 1.148-2.243 2.243-.536 1.986-.536 6.127-.536 6.127s0 4.141.536 6.127c.291 1.096 1.148 1.952 2.243 2.243 1.986.536 9.956.536 9.956.536s7.97 0 9.956-.536c1.096-.291 1.952-1.148 2.243-2.243.536-1.986.536-6.127.536-6.127s0-4.141-.536-6.127zm-13.473 8.034v-6.272l6.272 3.136-6.272 3.136z"/>
-  </svg>
-</Link>
-
+          </Link>
+          <Link to="https://www.youtube.com/@devmit29" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white cursor-pointer">
+            <svg className="w-6 h-6" fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+              <path d="M23.499 6.203c-.291-1.096-1.148-1.952-2.243-2.243-1.986-.536-9.956-.536-9.956-.536s-7.97 0-9.956.536c-1.096.291-1.952 1.148-2.243 2.243-.536 1.986-.536 6.127-.536 6.127s0 4.141.536 6.127c.291 1.096 1.148 1.952 2.243 2.243 1.986.536 9.956.536 9.956.536s7.97 0 9.956-.536c1.096-.291 1.952-1.148 2.243-2.243.536-1.986.536-6.127.536-6.127s0-4.141-.536-6.127zm-13.473 8.034v-6.272l6.272 3.136-6.272 3.136z"/>
+            </svg>
+          </Link>
         </div>
       </div>
       <div className="mt-4 text-center md:text-start text-gray-400 text-sm">

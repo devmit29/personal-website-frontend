@@ -2,17 +2,19 @@ import React from 'react';
 
 const ProjectCard = ({ imageUrl, title, description, tags, link, linkTitle }) => {
   return (
+    // <div className="w-[324px] xl:w-[372px] hover:opacity-90 hover:-translate-y-4 rounded-xl bg-slate-50 bg-blend-difference border-[#F7F7FF] z-50 justify-center mx-auto">
     <div className="w-[324px] xl:w-[372px] hover:opacity-90 hover:-translate-y-4 rounded-xl bg-slate-50 bg-blend-difference border-[#F7F7FF] z-50 justify-center mx-auto">
-      <img
+ 
+    <img
         src={imageUrl}
         alt={title}
-        className="h-[200px] p-1 rounded-2xl w-full object-cover"
+        className="h-[200px] shadow-md p-2 rounded-2xl w-full object-cover"
       />
       <div className="p-4">
         <h1 className="inline-flex items-center text- text-black font-semibold">
           {title}{' '}
         </h1>
-        <p className="mt-3 min-h-[70px] text-sm text-gray-800">{description}</p>
+        <p className="mt-3 min-h-[70px] max-h-[70px] font-normal text-sm text-gray-800">{description}</p>
         <div className="mt-4 min-h-[70px]">
           {tags.map((tag, index) => (
             <span
