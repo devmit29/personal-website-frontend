@@ -11,11 +11,11 @@ function About() {
 
     <div className='container max-w-[1440px] flex flex-col items-center justify-center mx-auto px-auto animate-appear pb-4'>
       <div className="flex p-2 animate-my flex-grow flex-col items-center md:flex-row md:justify-center md:items-start gap-4 ">
-        <div className='w-1/2 max-sm:w-full max-md:3/4 rounded-xl p-1'>
+        <div className='sm:w-1/2 max-sm:w-full max-md:w-3/4 rounded-xl p-1'>
           <img
             src="/about-me/img1.webp" 
             alt="Dev Mittal"
-            className="sm:h-80 sm:w-full object-cover rounded-xl"
+            className="max-h-96 w-full object-cover rounded-xl"
           />
         </div>
         <div className="sm:w-3/4 p-2 pt-0 text-center md:text-left">
@@ -31,11 +31,11 @@ function About() {
 
 
       <div className="flex p-4 lg:'h-80 mt-14 mb-10' flex-grow rounded-2xl flex-col items-center md:flex-row-reverse md:items-stretch gap-4">
-        <div className='w-1/2 max-sm:w-full max-md:3/4 rounded-xl p-1'>
+        <div className='sm:w-1/2 max-sm:w-full max-md:w-3/4 rounded-xl p-1'>
           <img
             src="/about-me/img2.webp"
             alt="Coding"
-            className="sm:h-80 sm:w-full object-cover rounded-xl"
+            className="max-h-96 w-full object-cover rounded-xl"
           />
         </div>
         <div className="w-3/4 p-2 pt-0 text-center md:text-left">
@@ -52,11 +52,11 @@ function About() {
 
 
       <div className="flex p-4 lg:'h-80 mt-14 mb-10' flex-grow rounded-2xl flex-col items-center md:flex-row md:items-stretch gap-4 ">
-        <div className='w-1/2 max-sm:w-full max-md:3/4 rounded-xl  p-1'>
+        <div className='sm:w-1/2 max-sm:w-full max-md:w-3/4 rounded-xl  p-1'>
           <img
             src="/about-me/img3.webp"
             alt="Hobbies"
-            className="sm:h-80 sm:w-full object-cover rounded-xl"
+            className="max-h-96 w-full object-cover rounded-xl"
             />
         </div>
         <div className="sm:w-3/4 p-2 pt-0 text-center md:text-left">
