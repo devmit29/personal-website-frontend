@@ -5,6 +5,12 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}",],
   theme: {
     extend: {
+      screens: {
+        'custom': {'min': '440px', 'max': "640px"},
+      },
+      inset: {
+        '2/5': "40%",
+      },
       keyframes: {
         appear: {
           "0%": {

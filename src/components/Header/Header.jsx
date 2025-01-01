@@ -25,6 +25,7 @@ function Header() {
               className={({ isActive }) => 
                 `rounded-lg ${isActive ? 'text-[#EA526F]' : 'text-gray-600'} px-2 pr-2 py-2 cursor-pointer`
               }
+              onClick={() => document.getElementById('navbar-default').classList.toggle('hidden')}
             >
               Home
             </NavLink>
@@ -35,6 +36,8 @@ function Header() {
               className={({ isActive }) => 
                 `rounded-lg ${isActive ? 'text-[#EA526F]' : 'text-gray-600'} px-2 pr-2 py-2 cursor-pointer`
               }
+              onClick={() => document.getElementById('navbar-default').classList.toggle('hidden')}
+                  
             >
               Projects
             </NavLink>
@@ -45,6 +48,8 @@ function Header() {
               className={({ isActive }) => 
                 `rounded-lg ${isActive ? 'text-[#EA526F]' : 'text-gray-600'} px-2 pr-2 py-2 cursor-pointer`
               }
+              onClick={() => document.getElementById('navbar-default').classList.toggle('hidden')}
+                  
             >
               About
             </NavLink>
@@ -55,6 +60,8 @@ function Header() {
               className={({ isActive }) => 
                 `rounded-lg ${isActive ? 'text-[#EA526F]' : 'text-gray-600'} px-2 pr-2 py-2 cursor-pointer`
               }
+              onClick={() => document.getElementById('navbar-default').classList.toggle('hidden')}
+                  
             >
               Connect
             </NavLink>
@@ -64,7 +71,8 @@ function Header() {
       <div className="flex items-center justify-end lg:w-auto lg:ml-auto">
             <button className="rounded-[15px] bg-[#279AF1] hover:bg-[#279AF1]/80 px-4 py-2 text-white font-semibold">
               <Link 
-            to="https://drive.google.com/file/d/1-ZNWtE8rRgeYEYxBLrwP4YjrkAcueGnv/view?usp=sharing" 
+                // to="https://drive.google.com/file/d/1-ZNWtE8rRgeYEYxBLrwP4YjrkAcueGnv/view?usp=sharing" 
+                to="https://drive.google.com/file/d/10IAsVttc5dm40eenAaagKpFxg_oOswX-/view?usp=sharing"
             target="_blank" 
             rel="noopener noreferrer" 
           >
