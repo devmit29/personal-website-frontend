@@ -4,7 +4,7 @@ import { Link, NavLink } from 'react-router-dom'
 function Header() {
 
   return (
-<header className="shadow-lg top-0 max-w-[1440px] bg-[#F7F7FF] opacity-90 w-full mx-auto mt-4 pb-1 backdrop-blur-md rounded-3xl">
+<header className="shadow-lg top-0 max-w-[1440px] bg-[#F7F7FF] w-full mx-auto mt-4 pb-1 backdrop-blur-md rounded-3xl">
   <nav className="border-gray-200 px-4 lg:px-6 py-2.5 rounded-full">
     <div className="flex flex-wrap justify-between items-center mx-auto">
       <button 

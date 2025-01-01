@@ -41,15 +41,15 @@ function Home() {
             <div className="max-w-2xl mx-auto py-40 sm:py-48">
               <div className="text-center sm:-skew-y-3">
                 <h1 className="text-5xl sm:text-6xl lg:text-6xl font-bold tracking-tight text-white transition-shadow">
-                  Hey! I am Dev Mittal
+                  Hello! I am Dev Mittal
                 </h1>
-                <p className="mt-6 text-base sm:text-lg leading-8 text-gray-200">
+                <p className="mt-6 text-base font-medium sm:text-lg leading-8 text-gray-200">
                   Please Feel Free to drop your email to connect with me.
                 </p>
                 <div className="mt-10 flex flex-col sm:flex-row items-center justify-center gap-4">
                   <form id='my-form' onSubmit={handleSubmit} className='flex gap-2 flex-col sm:flex-row'>
                     <input
-                      ref={emailRef} name='email' type="email" id="email" placeholder="Please Enter Your Email" className="rounded-md text-black w-auto sm:w-auto px-3.5 py-2.5 bg-slate-50" />
+                      ref={emailRef} name='email' type="email" id="email" placeholder="Please Enter Your Email" className="rounded-md text-black outline-none w-auto sm:w-auto px-3.5 py-2.5 bg-slate-50" />
                     <button
                       type="submit" className="rounded-md max-sm:w-1/2 max-sm:m-auto bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">
                       Done
@@ -67,6 +67,7 @@ function Home() {
           className="
           absolute 
           animate-appear
+          transition-shadow
           top-0 
           right-0
           w-auto 
