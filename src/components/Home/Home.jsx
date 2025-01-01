@@ -64,9 +64,9 @@ function Home() {
           </div>
         </div>
         <img src='/myimg.svg ' alt='mying'
-          // className='absolute animate-appear left-0 -top-[17rem] custom:-top-56 custom:left-20 sm:-top-36 sm:left-24 md:left-24 md:-top-32 lg:-top-16 lg:left-1/4 xl:-top-20 xl:left-2/5 2xl:left-1/2 w-auto h-full -z-10' />
           className="
           absolute 
+          animate-appear
           top-0 
           right-0
           w-auto 
