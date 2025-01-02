@@ -20,10 +20,10 @@ function About() {
         </div>
         <div className="sm:w-3/4 p-2 pt-0 text-center md:text-left">
           <h2 className="text-4xl font-Rubik font-semibold text-white mb-4">Who Am I & My Vision</h2>
-          <p className="text-[#F7F7FF]/85 font-sans pt-2 text-xl">
+          <p className="text-[#F7F7FF]/85 font-sans pt-2 text-left text-xl">
             I am a student currently pursuing my Final year at <strong className='text-[#279AF1]'>The LNM Institute of Information Technology, Jaipur.</strong> I did my Schooling from St. Anselm's Sr. Sec. School, Ajmer.<br />
             The most important quality which I have inherited from my <em>Parents</em> is <em className='text-[#279AF1]'><i>Be Honest to yourself.</i></em> No matter how successful you become your attitude and your values will always drive you to the path of success.
-            <br/>Mr. Dependable—Mahi—is my greatest inspiration! His passion for the nation motivates me to make a meaningful contribution to my own. You don't have to be an IAS officer, politician, or similar to make a difference for your country. Whatever career path you choose, you can create a positive impact on the nation.
+            <br/><br/>Mr. Dependable—Mahi—is my greatest inspiration! His passion for the nation motivates me to make a meaningful contribution to my own. You don't have to be an IAS officer, politician, or similar to make a difference for your country. Whatever career path you choose, you can create a positive impact on the nation.
             
           </p>
         </div>
@@ -61,7 +61,7 @@ function About() {
         </div>
         <div className="sm:w-3/4 p-2 pt-0 text-center md:text-left">
           <h2 className="text-4xl font-Rubik font-semibold text-white mb-4">Hobbies</h2>
-            <p className="text-[#F7F7FF]/85 font-sans pt-2 text-xl">
+            <p className="text-[#F7F7FF]/85 font-sans text-left pt-2 text-xl">
               Right from my childhood, I have been fond of music, especially the piano. I loved playing the keyboard in school assemblies, the school choir, and also enjoyed uploading YouTube videos. I am a techie who loves reading about new technologies and products. Additionally, I enjoy playing mobile and PC games.<br/>
               In my free time, I like exploring new places (<i className='text-[#279AF1]'> I love road trips</i> ), reading books, and working on side projects.
             
