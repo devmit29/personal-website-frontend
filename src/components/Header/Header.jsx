@@ -69,7 +69,7 @@ function Header() {
         </ul>
       </div>
       <div className="flex items-center justify-end lg:w-auto lg:ml-auto">
-            <button className="rounded-[15px] bg-[#279AF1] hover:bg-[#279AF1]/80 px-4 py-2 text-white font-semibold">
+            <button className="rounded-[15px] bg-[#279AF1] hover:bg-[#4492f9] px-4 py-2 text-white font-semibold">
               <Link 
                 // to="https://drive.google.com/file/d/1-ZNWtE8rRgeYEYxBLrwP4YjrkAcueGnv/view?usp=sharing" 
                 to="https://drive.google.com/file/d/10IAsVttc5dm40eenAaagKpFxg_oOswX-/view?usp=sharing"
