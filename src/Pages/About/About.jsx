@@ -43,7 +43,7 @@ function About() {
           <ul className='text-[#F7F7FF]/85 text-left font-sans pt-2 gap-1 list-disc text-xl'>
             <li className='my-1'>Headed Events and PR team of our college's annual cultural fest - Vivacity.</li>
             <li className='my-1'>Achieved distinction in Trinity College London's Grade 3 exam in "Electronic Keyboard" category.  </li>
-            <li className='my-1'>Got 100% scholarshp for Certification course by OEMs like Adobe, Apple, WhiteHat etc. through RCAT Quizzathon-4 in Jaipur.</li>
+            <li className='my-1'>Got 100% scholarship for Certification course by OEMs like Adobe, Apple, WhiteHat etc. through RCAT Quizzathon-4 in Jaipur.</li>
             <li className='my-1'>Cleared exam conducted by Adboe and got Certificate of - "Adbode Certified Professional in Web Authoring".</li>
             <li className='my-1'>Captain of School cricket team.</li>
           </ul>
