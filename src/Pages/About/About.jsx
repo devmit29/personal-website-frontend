@@ -41,11 +41,12 @@ function About() {
         <div className="w-3/4 p-2 pt-0 text-center md:text-left">
           <h2 className="text-4xl capitalize font-Rubik font-semibold text-white md:text-right mb-4">My Achievements</h2>
           <ul className='text-[#F7F7FF]/85 text-left font-sans pt-2 gap-1 list-disc text-xl'>
-            <li className='my-1'>Headed Events and PR team of our college's annual cultural fest - Vivacity.</li>
-            <li className='my-1'>Achieved distinction in Trinity College London's Grade 3 exam in "Electronic Keyboard" category.  </li>
-            <li className='my-1'>Got 100% scholarship for Certification course by OEMs like Adobe, Apple, WhiteHat etc. through RCAT Quizzathon-4 in Jaipur.</li>
-            <li className='my-1'>Cleared exam conducted by Adboe and got Certificate of - "Adbode Certified Professional in Web Authoring".</li>
-            <li className='my-1'>Captain of School cricket team.</li>
+          <li className='my-1'>Headed Events and PR team of our college's annual cultural fest - Vivacity.</li>
+          <li className='my-1'>Achieved distinction in Trinity College London's Grade 3 exam in the "Electronic Keyboard" category.</li>
+          <li className='my-1'>Received a 100% scholarship for the certification course by OEMs like Adobe, Apple, WhiteHat, etc. through RCAT Quizzathon-4 in Jaipur.</li>
+          <li className='my-1'>Cleared the exam conducted by Adobe and received the Certificate of "Adobe Certified Professional in Web Authoring".</li>
+          <li className='my-1'>Captain of the school cricket team.</li>
+
           </ul>
         </div>
       </div>
