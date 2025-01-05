@@ -4,7 +4,7 @@ import { Header, Footer } from './components/index.js'
 
 function Layout() {
   return (
-    <div className='mx-2' >
+    <div className='mx-2 h-full'>
       <Header />
       <Outlet />
       <Footer />

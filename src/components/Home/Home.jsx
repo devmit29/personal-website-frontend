@@ -32,9 +32,9 @@ function Home() {
     return (
       <>
         {/* <div className="bg-[#000]"> */}
-        <div className='flex justify-center xl:justify-start max-w-[1440px] mx-auto items-center h-screen'>
-          <div className=" animate-appear lg:pr-96 xl:px-8 ">
-            <div className="max-w-2xl mx-auto py-40 sm:pt-96 lg:pt-48 lg:pb-48">
+        <div className='flex justify-center xl:justify-start max-w-[1440px] mx-auto items-center '>
+          <div className="animate-appear lg:pr-96 xl:px-8 ">
+            <div className="max-w-2xl mx-auto pt-64 pb-24 sm:pt-96 lg:pt-80 lg:pb-32 xl:pt-72 xl:pb-32">
               <div className="text-center md:-skew-y-3">
               <h1 className="text-5xl sm:text-5xl xl:text-6xl font-bold tracking-tight text-white transition-shadow">
                 Welcome! I'm Dev Mittal 🚀
@@ -55,9 +55,9 @@ function Home() {
                 </div>
               </div>
             </div>
-            <div className="absolute inset-x-0 bottom-0 -z-10 transform-gpu overflow-hidden blur-3xl sm:bottom-0" aria-hidden="true">
+            {/* <div className="absolute inset-x-0 bottom-0 -z-10 transform-gpu overflow-hidden blur-3xl sm:bottom-0" aria-hidden="true">
               <div className="relative left-[calc(50%+3rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 bg-gradient-to-tr from-[#171135] to-[#9089fc] opacity-30 sm:left-[calc(50%+36rem)] sm:w-[72.1875rem]"></div>
-            </div>
+            </div> */}
           </div>
         <img src='/myimg.svg ' alt='mying'
           className="

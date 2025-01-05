@@ -7,7 +7,7 @@ function Footer() {
       <hr className="h-px my-2 bg-[#55626c] border-0"/>
     <div className="container mx-auto px-4 md:px-8">
       <div className="flex flex-col md:flex-row justify-between items-center">
-        <div className="text-center md:text-left mb-6 sm:mb-0 w-full sm:w-auto">
+        <div className="text-center md:text-left mb-6 md:mb-0 w-full sm:w-auto">
           <h2 className="text-2xl font-bold text-white mb-2 mt-2">Dev Mittal</h2>
           <p className="text-gray-400">I love to explore and learn new things quickly.</p>
         </div>
