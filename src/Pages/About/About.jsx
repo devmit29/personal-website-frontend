@@ -21,9 +21,9 @@ function About() {
         <div className="sm:w-3/4 p-2 pt-0 text-center md:text-left">
           <h2 className="text-4xl capitalize font-Rubik font-semibold text-white mb-4">Who Am I & My Vision</h2>
           <p className="text-[#F7F7FF]/85 font-sans pt-2 text-left text-xl">
-            I am a student currently pursuing my Final year at <strong className='text-[#279AF1]'>The LNM Institute of Information Technology, Jaipur.</strong> I did my Schooling from St. Anselm's Sr. Sec. School, Ajmer.<br />
-            The most important quality which I have inherited from my <em>Parents</em> is <em className='text-[#279AF1]'><i>Be Honest to yourself.</i></em> No matter how successful you become your attitude and your values will always drive you to the path of success.
-            <br/><br/>Mr. Dependable—Mahi—is my greatest inspiration! His passion for the nation motivates me to make a meaningful contribution to my own. You don't have to be an IAS officer, politician, or similar to make a difference for your country. Whatever career path you choose, you can create a positive impact on the nation.
+            I am currently pursuing my Final year at <strong className='text-[#279AF1]'>The LNM Institute of Information Technology, Jaipur.</strong> I did my schooling from St. Anselm's Sr. Sec. School, Ajmer.<br />
+            The most important quality which I have inherited from my <em>Parents</em> is <em className='text-[#279AF1]'><i>Be honest to yourself.</i></em> Your attitude and values will always be the driving force behind your success. I am a <strong>highly-motivated</strong> and <strong>hardworking</strong> individual who is always ready to learn new things and take on new challenges.<br />
+            <br/>Mr. Dependable—Mahi—is my greatest inspiration! His passion for the nation motivates me to make a meaningful contribution to my own. You don't have to be an IAS officer, politician, or similar to make a difference for your country. Whatever career path you choose, you can create a positive impact on the nation.
             
           </p>
         </div>
@@ -41,11 +41,11 @@ function About() {
         <div className="w-3/4 p-2 pt-0 text-center md:text-left">
           <h2 className="text-4xl capitalize font-Rubik font-semibold text-white md:text-right mb-4">My Achievements</h2>
           <ul className='text-[#F7F7FF]/85 text-left font-sans pt-2 gap-1 list-disc text-xl'>
-            <li className='my-1'>Headed Events and PR team of our college's annual Cultural Fest - Vivacity.</li>
-            <li className='my-1'>Achieved distinction in Trinity College London's Grade 3 in "Electronic Keyboard" category.  </li>
-            <li className='my-1'>Got 100% scolarship for Certification Course by OEMs like Adobe, Apple, WhiteHat etc. through RCAT Quizzathon-4 in Jaipur.</li>
-            <li className='my-1'>Cleared Exam Conducted by Adboe and got Certificate of - "Adbode Certified Professional in Web Authoring through DreamWeaver".</li>
-            <li className='my-1'>Captain of School Cricket Team.</li>
+            <li className='my-1'>Headed Events and PR team of our college's annual cultural fest - Vivacity.</li>
+            <li className='my-1'>Achieved distinction in Trinity College London's Grade 3 exam in "Electronic Keyboard" category.  </li>
+            <li className='my-1'>Got 100% scholarshp for Certification course by OEMs like Adobe, Apple, WhiteHat etc. through RCAT Quizzathon-4 in Jaipur.</li>
+            <li className='my-1'>Cleared exam conducted by Adboe and got Certificate of - "Adbode Certified Professional in Web Authoring".</li>
+            <li className='my-1'>Captain of School cricket team.</li>
           </ul>
         </div>
       </div>
@@ -62,10 +62,9 @@ function About() {
         <div className="sm:w-3/4 p-2 pt-0 text-center md:text-left">
           <h2 className="text-4xl capitalize font-Rubik font-semibold text-white mb-4">Hobbies</h2>
             <p className="text-[#F7F7FF]/85 font-sans text-left pt-2 text-xl">
-              Since childhood, I have been fond of music, especially the piano. I loved playing the keyboard during school assemblies and in the school choir, and I also enjoy uploading YouTube videos. Alongside my love for music, I am a tech enthusiast who enjoys exploring new technologies and products.<br />
-              I also enjoy gaming, both on mobile and PC, and value the creativity and problem-solving these experiences bring.<br/>
-              {/* In my free time, I like exploring new places (<i className='text-[#279AF1]'> I love road trips</i> ), reading about political news, and working on side projects. */}
-              In my free time, I like exploring new places (<i className='text-[#279AF1]'> I love road trips </i>), staying updated on political news, and refining my skills through certifications and courses
+              Music has been a passion of mine since childhood, especially the piano. I loved playing the keyboard during school assemblies and being part of the school choir. Along with my love for music, I'm deeply interested in exploring new technologies and products.<br />
+              Gaming, both on mobile and PC, is another passion of mine as it sparks creativity and problem-solving.<br/>
+              In my free time, I enjoy exploring new places, (<i className='text-[#279AF1]'> I love road trips </i>), staying updated on political news, and refining my skills through certifications and courses.
           </p>
         </div>
       </div>

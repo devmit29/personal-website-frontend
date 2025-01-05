@@ -26,5 +26,15 @@ export const router = createBrowserRouter([
       ])
     }
 ])
+// const router = createBrowserRouter([
+//   createRoutesFromElements(
+//     <Route path="/" element={<Layout />}>
+//       <Route path='' element={<Home />} />
+//       <Route path='about-me' element={<About />} />
+//       <Route path='connect' element={<Contact/> } />
+//       <Route path='projects' element={<Projects/> } />
+//     </Route>
+//   )
+// ])
   
 export default router;

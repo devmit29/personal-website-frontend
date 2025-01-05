@@ -1,17 +1,15 @@
 
-import React, { useState, useRef } from 'react';
+import React, { useRef } from 'react';
 
 
 function Home() {
 
   const emailRef = useRef(null);
-  const [email, setEmail] = useState('');
 
   const handleSubmit = async (event) => {
     event.preventDefault();
     const emailValue = emailRef.current.value;
-    setEmail(emailValue);
-    
+    emailRef.current.value = '';
     try {
       const response = await fetch('https://website-backend-aokp.onrender.com/send-email', {
         method: 'POST',
@@ -23,10 +21,8 @@ function Home() {
 
       if (response.ok) {
         alert("Thanks for Connecting!");
-        setEmail('');
       } else {
         console.error('Error sending email');
-        setEmail('');
       }
     } catch (error) {
       console.error('Error:', error);
