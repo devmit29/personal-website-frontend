@@ -31,8 +31,9 @@ export default {
       },
       animation: {
         appear: "appear 3s ease-in-out",
-        my: 'translate 1s ease-in-out forwards',
-        typewriter: "typewriter 5s steps(27) forwards"
+        my: 'appear 1s ease-in-out forwards',
+        typewriter: "typewriter 5s steps(27) forwards",
+        navcustom: "appear 1s ease-in-out"
       },
     },
   },
