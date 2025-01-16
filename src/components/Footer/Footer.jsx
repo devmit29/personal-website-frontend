@@ -44,7 +44,7 @@ function Footer() {
         </div>
       </div>
       <div className="mt-4 text-center md:text-start text-gray-400 text-sm">
-        © 2024 My Website. All rights reserved.
+        © 2025 My Website. All rights reserved.
       </div>
     </div>
   </footer>
