@@ -28,19 +28,27 @@ const ProjectsPage = () => {
 
   const projects = [
     {
-      title: 'E-commerce (Food)',
-      description: 'I was the Project Manager in developing end-to-end Full-Stack website for capmus Parlor for seamless delivery system.',
-      imageUrl: '/Amul-min.png',
-      tags: ['ReactJS', 'NodeJS', 'Express', 'MongoDB'],
-      link: 'https://ecom-frontend-4x7f.onrender.com',
+      title: 'Project Management Tool',
+      description: 'Developed an end-to-end project and Task management tool for improving team collaboration and productivity.',
+      imageUrl: '/Project_Management.webp',
+      tags: ['Next.js', 'Hono', 'Appwrite', 'TailwindCSS', 'OAuth'],
+      link: 'https://jira-clone-virid-five.vercel.app',
       linkTitle: 'Website Link',
     },
     {
-      title: 'Project Management Tool',
-      description: 'Developed an end-to-end project management tool for companies to manage their projects and tasks.',
-      imageUrl: '/Project_Management.png',
-      tags: ['Next.js', 'Hono', 'Appwrite', 'TailwindCSS', 'OAuth'],
-      link: 'https://jira-clone-virid-five.vercel.app',
+      title: 'Song Recommender',
+      description: 'Recommends you songs based on weather predictions of your travel location.',
+      imageUrl: '/songrecommender.webp',
+      tags: ['Next.js', 'WeatherStackAPI', 'GooglePlacesAPI', 'YoutubeDataAPI'],
+      link: 'https://song-recommender-one.vercel.app/',
+      linkTitle: 'Website Link',
+    },
+    {
+      title: 'E-commerce (Food)',
+      description: 'I was the Project Manager in developing end-to-end Full-Stack website for capmus Parlor for seamless delivery system.',
+      imageUrl: '/Amul-min.webp',
+      tags: ['ReactJS', 'NodeJS', 'Express', 'MongoDB'],
+      link: 'https://ecom-frontend-4x7f.onrender.com',
       linkTitle: 'Website Link',
     },
     {
