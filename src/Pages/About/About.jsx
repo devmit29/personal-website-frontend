@@ -1,4 +1,7 @@
 import React from 'react'
+import img1 from '../../assets//about-me/img1.webp'
+import img2 from '../../assets//about-me/img2.webp'
+import img3 from '../../assets//about-me/img3.webp'
 
 function About() {
   return (
@@ -13,7 +16,7 @@ function About() {
       <div className="flex p-2 animate-my flex-grow flex-col items-center md:flex-row md:justify-center md:items-start gap-4 ">
         <div className='sm:w-1/2 max-sm:w-full max-md:w-3/4 rounded-xl p-1'>
           <img
-            src="/about-me/img1.webp" 
+            src={img1}
             alt="Dev Mittal"
             className="max-h-96 w-full object-cover rounded-xl"
           />
@@ -33,7 +36,7 @@ function About() {
       <div className="flex p-4 lg:'h-80 mt-14 mb-10' flex-grow rounded-2xl flex-col items-center md:flex-row-reverse md:items-stretch gap-4">
         <div className='sm:w-1/2 max-sm:w-full max-md:w-3/4 rounded-xl p-1'>
           <img
-            src="/about-me/img2.webp"
+            src={img2}
             alt="Coding"
             className="max-h-96 w-full object-cover rounded-xl"
           />
@@ -55,7 +58,7 @@ function About() {
       <div className="flex p-4 lg:'h-80 mt-14 mb-10' flex-grow rounded-2xl flex-col items-center md:flex-row md:items-stretch gap-4 ">
         <div className='sm:w-1/2 max-sm:w-full max-md:w-3/4 rounded-xl  p-1'>
           <img
-            src="/about-me/img3.webp"
+            src={img3}
             alt="Hobbies"
             className="max-h-96 w-full object-cover rounded-xl"
             />

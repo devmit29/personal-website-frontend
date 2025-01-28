@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import ProjectCard from './ProjectCard'; 
+import ProjectCard from '../../components/projectCard/ProjectCard'; 
 const ProjectsPage = () => {
 
   // const [projects, setProjects] = useState([]);
