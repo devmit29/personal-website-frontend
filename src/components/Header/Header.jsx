@@ -1,15 +1,27 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import { Link, NavLink } from 'react-router-dom'
+import { DarkModeSwitch } from 'react-toggle-dark-mode';
+import useTheme from '../../contexts/theme';
 
 function Header() {
+  const {theme, lightTheme, darkTheme } = useTheme();
+  const [isDarkMode, setIsDarkMode] = useState(false);
 
+  useEffect(() => {
+    if(theme === 'dark') {
+      setIsDarkMode(true);
+    }
+    else {
+      setIsDarkMode(false);
+    }
+  },[theme])
   return (
-<header className="shadow-lg top-0 max-w-[1440px] bg-[#F7F7FF] w-full mx-auto mt-4 pb-1 backdrop-blur-md rounded-3xl">
-  <nav className="border-gray-200 px-4 lg:px-6 py-2.5 rounded-full">
+<header className="shadow-lg top-0 max-w-[1440px] bg-[#F7F7FF] dark:bg-[#2d2d2d] w-full mx-auto mt-4 pb-1 backdrop-blur-md rounded-3xl">
+  <nav className="border-gray-200 dark:border-gray-700 px-4 lg:px-6 py-2.5 rounded-full">
     <div className="flex flex-nowrap justify-between items-center mx-auto overflow-hidden">
       <div className='flex items-center rounded-lg'>
         <button 
-        className="inline-flex items-center p-2 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-0 focus:ring-gray-200"
+        className="inline-flex items-center p-2 text-sm text-gray-500 dark:text-gray-400 rounded-lg md:hidden hover:bg-gray-100 dark:hover:bg-gray-700 focus:outline-none focus:ring-0 focus:ring-gray-200 dark:focus:ring-gray-600"
         aria-controls="navbar-default"
         aria-expanded="false"
         onClick={() => {
@@ -48,7 +60,7 @@ function Header() {
         <NavLink
           to="/"
           className={({ isActive }) =>
-            `rounded-lg ${isActive ? 'text-[#EA526F]' : 'text-gray-600'} px-2 pr-2 py-2 cursor-pointer`
+            `rounded-lg ${isActive ? 'text-[#EA526F]' : 'text-gray-600 dark:text-gray-300'} px-2 pr-2 py-2 cursor-pointer`
           }
         >
           Home
@@ -58,7 +70,7 @@ function Header() {
         <NavLink
           to="/projects"
           className={({ isActive }) =>
-            `rounded-lg ${isActive ? 'text-[#EA526F]' : 'text-gray-600'} px-2 pr-2 py-2 cursor-pointer`
+            `rounded-lg ${isActive ? 'text-[#EA526F]' : 'text-gray-600 dark:text-gray-300'} px-2 pr-2 py-2 cursor-pointer`
           }
         >
           Projects
@@ -68,7 +80,7 @@ function Header() {
         <NavLink
           to="/about-me"
           className={({ isActive }) =>
-            `rounded-lg ${isActive ? 'text-[#EA526F]' : 'text-gray-600'} px-2 pr-2 py-2 cursor-pointer`
+            `rounded-lg ${isActive ? 'text-[#EA526F]' : 'text-gray-600 dark:text-gray-300'} px-2 pr-2 py-2 cursor-pointer`
           }
         >
           About
@@ -78,18 +90,25 @@ function Header() {
         <NavLink
           to="/connect"
           className={({ isActive }) =>
-            `rounded-lg ${isActive ? 'text-[#EA526F]' : 'text-gray-600'} px-2 pr-2 py-2 cursor-pointer`
+            `rounded-lg ${isActive ? 'text-[#EA526F]' : 'text-gray-600 dark:text-gray-300'} px-2 pr-2 py-2 cursor-pointer`
           }
         >
           Connect
         </NavLink>
       </li>
     </ul>
-  </div>
+        </div>
+          
           <div className="flex items-center justify-end ml-auto"
               id='button'    
           >
-            <button className="rounded-[15px] bg-[#279AF1] hover:bg-[#4492f9] px-4 py-2 text-white font-semibold">
+            <DarkModeSwitch
+              style={{ marginRight: '1rem' }}
+      checked={isDarkMode}
+      onChange={theme === 'light' ? darkTheme : lightTheme}
+      size={32}
+    />
+            <button className="rounded-[15px] bg-[#279AF1] dark:bg-blue-500 hover:bg-[#4492f9] dark:hover:bg-blue-600 px-4 py-2 text-white font-semibold">
               <Link 
                 // to="https://drive.google.com/file/d/1-ZNWtE8rRgeYEYxBLrwP4YjrkAcueGnv/view?usp=sharing" 
                 to="https://drive.google.com/file/d/10IAsVttc5dm40eenAaagKpFxg_oOswX-/view?usp=sharing"

@@ -51,7 +51,7 @@ function Contact() {
       
       <form onSubmit={handleSubmit} className="w-full max-w-lg bg-white/40 p-8 rounded-3xl shadow-md">
         <div className="mb-4">
-          <label className="block text-blue-50 text-md font-bold mb-2" htmlFor={nameId}>
+          <label className="block dark:text-blue-50 text-slate-50 text-md font-bold mb-2" htmlFor={nameId}>
             Name
           </label>
             <input
@@ -68,7 +68,7 @@ function Contact() {
         </div>
 
         <div className="mb-4">
-          <label className="block text-blue-59 text-md font-bold mb-2" htmlFor={emailId}>
+          <label className="block dark:text-blue-50 text-slate-50 text-md font-bold mb-2" htmlFor={emailId}>
             Email
           </label>
             <input
@@ -83,7 +83,7 @@ function Contact() {
           />
           </div>
           <div className="mb-4">
-          <label className="block text-blue-59 text-md font-bold mb-2" htmlFor={phoneId}>
+          <label className="block dark:text-blue-50 text-slate-50 text-md font-bold mb-2" htmlFor={phoneId}>
             Phone Number
           </label>
             <input
@@ -99,7 +99,7 @@ function Contact() {
         </div>
 
         <div className="mb-4">
-          <label className="block text-blue-50 text-md font-bold mb-2" htmlFor={msgId}>
+          <label className="block dark:text-blue-50 text-slate-50 text-md font-bold mb-2" htmlFor={msgId}>
             Message
           </label>
             <textarea 
