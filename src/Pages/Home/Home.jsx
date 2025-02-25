@@ -1,4 +1,5 @@
 import React, { useRef } from 'react';
+import ModelViewer from '../../components/ModelViewer';
 
 function Home() {
 
@@ -33,10 +34,10 @@ function Home() {
         <div className="animate-appear lg:pr-96 xl:px-8 ">
           <div className="max-w-2xl mx-auto pt-64 pb-24 sm:pt-96 lg:pt-80 lg:pb-32 xl:pt-72 xl:pb-32">
             <div className="text-center md:-skew-y-3">
-              <h1 className="text-5xl sm:text-5xl xl:text-6xl font-bold tracking-tight text-black dark:text-white transition-shadow">
+              <h1 className="text-5xl sm:text-5xl xl:text-6xl font-bold tracking-tight text-black dark:text-blue-500 dark:lg:text-gray-300 transition-shadow">
                 Welcome! I'm Dev Mittal 🚀
               </h1>
-              <p className="mt-6 text-base font-medium sm:text-lg leading-7 text-gray-800 dark:text-gray-200">
+              <p className="mt-6 text-xl font-bold bg-inherit sm:text-lg leading-8 text-gray-800 dark:text-gray-300 ">
                 I'm passionate about building innovative solutions 💡, exploring new technologies, and bringing ideas to life ✨. Whether you're here to collaborate 🤝, get inspired, or just say hi 👋, I’d love to hear from you. Let’s connect and make something amazing happen!
               </p>
 
@@ -55,7 +56,7 @@ function Home() {
             </div>
           </div>
         </div>
-        <img src='/myimg.svg' alt='myimg'
+        {/* <img src='/myimg.svg' alt='myimg'
           className="
           absolute 
           animate-appear
@@ -65,8 +66,11 @@ function Home() {
           w-auto 
           h-auto 
           -z-10
-        " />
-      </div>
+        " /> */}
+        </div>
+        <div className='absolute w-full -z-10 animate-appear top-0'>
+          <ModelViewer className="w-full h-auto sm:w-3/4 md:w-1/2 lg:w-1/3 xl:w-1/4 mx-auto" />
+        </div>
     </>
   );
 }
