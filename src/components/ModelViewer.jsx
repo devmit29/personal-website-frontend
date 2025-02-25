@@ -1,7 +1,7 @@
 import { Canvas } from "@react-three/fiber";
 import { CameraControls, Environment, PerspectiveCamera } from "@react-three/drei";
 import { Avatar } from "./Avatar";
-import { Model } from "./Model_new";
+import { Model } from "./Model4";
 import { Suspense } from "react";
 import { useMediaQuery } from 'react-responsive';
 
