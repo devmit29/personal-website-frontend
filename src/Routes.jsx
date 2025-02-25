@@ -2,6 +2,7 @@ import { Route, RouterProvider, createBrowserRouter, createRoutesFromElements } 
 import Layout from './Layout'
 import { About, Contact, Projects } from './Pages/index.js'
 import Home from './Pages/Home/Home.jsx';
+import GlbModel from './components/ModelViewer.jsx';
 
 export const router = createBrowserRouter([
     {
@@ -22,7 +23,7 @@ export const router = createBrowserRouter([
         {
           path: 'projects',
           element: <Projects/>
-        }
+        },
       ])
     }
 ])
