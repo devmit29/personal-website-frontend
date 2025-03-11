@@ -87,6 +87,7 @@ const ProjectsPage = () => {
   // ];
 
   const [projects, setProjects] = useState([]);
+  const [loading, setLoading] = useState(true);
 
   useEffect(() => {
     async function fetchProjects() {
@@ -102,6 +103,7 @@ const ProjectsPage = () => {
           linkTitle: project.linkTitle,
         }));
         setProjects(projectsData);
+        setLoading(false);
       } catch (error) {
         console.error('Error fetching projects:', error);
       }
@@ -114,11 +116,21 @@ const ProjectsPage = () => {
     <div id='projects' className="container max-w-[1440px] mx-auto px-4 animate-appear pt-10 pb-28">
         <h1 className="text-3xl rounded-3xl border-[#F7F7FF] font-sans border-2 font-bold text-center w-fit mx-auto px-4 py-4 my-8">Projects</h1>
       {/* <div className="grid grid-cols-1 mx-auto px-auto md:grid-cols-2 lg:grid-cols-3 gap-8 pt-2"> */}
-      <div className="flex flex-wrap justify-around gap-x-1 gap-y-8 mx-auto pt-2">  
+      {loading && (
+        <div className='min-h-screen'>
+          <p className='text-4xl p-4 text-center'>Loading...
+          </p>
+          </div>
+      )}
+      {!loading && projects.length === 0 ? (
+        <div className='min-h-screen'>
+          <p className='text-4xl p-4 text-center'>No projects to show</p>
+        </div>
+      ): (<div className="flex flex-wrap justify-around gap-x-1 gap-y-8 mx-auto pt-2">  
       {projects.map((project, index) => (
           <ProjectCard key={index} {...project} />
         ))}
-      </div>
+      </div>)}
     </div>
   );
 };
