@@ -38,14 +38,14 @@ function Layout() {
         <Outlet />
         <Footer />
       </div>}
-      {isMobile && <div className='mx-2 h-full'>
+      {/* {isMobile && <div className='mx-2 h-full'>
         <Header />
         <Home/>
         <Projects />
         <About />
         <Contact/>
         <Footer />
-      </div>}
+      </div>} */}
     </ThemeProvider>
   )
 }
