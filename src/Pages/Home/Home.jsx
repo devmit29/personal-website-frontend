@@ -10,7 +10,7 @@ function Home() {
     const emailValue = emailRef.current.value;
     emailRef.current.value = '';
     try {
-      const response = await fetch('https://website-backend-aokp.onrender.com/send-email', {
+      const response = await fetch('https://website-backend-aokp.onrender.com/api/send-email', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
