@@ -33,7 +33,8 @@ function Layout() {
 
   return (
     <ThemeProvider value={{theme, darkTheme, lightTheme}}>
-      {!isMobile && <div className='mx-2 h-full'>
+      {/* {!isMobile && <div className='mx-2 h-full'> */}
+      {<div className='mx-2 h-full'>
         <Header />
         <Outlet />
         <Footer />
