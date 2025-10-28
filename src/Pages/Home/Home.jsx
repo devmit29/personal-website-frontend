@@ -21,7 +21,7 @@ function Home() {
       if (response.ok) {
         alert("Thanks for Connecting!");
       } else {
-        console.error('Error sending email');
+        console.error('Error sending email', response);
       }
     } catch (error) {
       console.error('Error:', error);
