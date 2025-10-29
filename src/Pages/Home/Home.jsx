@@ -1,15 +1,27 @@
-import React, { useRef } from 'react';
+import React, { useRef, useState, useEffect } from 'react';
 import ModelViewer from '../../components/ModelViewer';
+import toast from 'react-hot-toast';
 
 function Home() {
-
   const emailRef = useRef(null);
+  const [isVisible, setIsVisible] = useState(false);
+
+  useEffect(() => {
+    setIsVisible(true);
+  }, []);
 
   const handleSubmit = async (event) => {
     event.preventDefault();
     const emailValue = emailRef.current.value;
     emailRef.current.value = '';
     try {
+      toast.success("Thanks for Connecting! 🎉", {
+        duration: 4000,
+        style: {
+          background: '#10b981',
+          color: '#ffffff',
+        },
+      });
       const response = await fetch('https://website-backend-aokp.onrender.com/api/send-email', {
         method: 'POST',
         headers: {
@@ -19,59 +31,94 @@ function Home() {
       });
 
       if (response.ok) {
-        alert("Thanks for Connecting!");
+        
       } else {
         console.error('Error sending email', response);
+        toast.error("Oops! Something went wrong. Please try again.", {
+          duration: 4000,
+        });
       }
     } catch (error) {
       console.error('Error:', error);
+      toast.error("Network error. Please check your connection and try again.", {
+        duration: 4000,
+      });
     }
   }
 
   return (
-    <>
-      <div className='flex justify-center xl:justify-start max-w-[1440px] mx-auto items-center '>
-        <div className="animate-appear lg:pr-96 xl:px-8 ">
-          <div className="max-w-2xl mx-auto pt-64 pb-24 sm:pt-96 lg:pt-80 lg:pb-32 xl:pt-72 xl:pb-32">
-            <div className="text-center md:-skew-y-3">
-              <h1 className="text-5xl sm:text-5xl xl:text-6xl font-bold tracking-tight text-gray-300 lg:text-black dark:text-gray-300 dark:lg:text-gray-300 transition-shadow">
-                Welcome! I'm Dev Mittal 🚀
-              </h1>
-              <p className="mt-6 text-xl font-bold bg-inherit sm:text-lg leading-8 text-gray-300 lg:text-gray-800 dark:text-gray-300 ">
-                I'm passionate about building innovative solutions 💡, exploring new technologies, and bringing ideas to life ✨. Whether you're here to collaborate 🤝, get inspired, or just say hi 👋, I’d love to hear from you. Let’s connect and make something amazing happen!
-              </p>
+    <div className="relative min-h-screen overflow-hidden">
+      {/* Background Model */}
+      <div className='absolute inset-0 -z-10'>
+        <div className="relative w-full h-full">
+          {/* Gradient overlay for better contrast in light mode */}
+          <div className="absolute inset-0 bg-gradient-to-br from-transparent via-transparent to-black/10 dark:bg-transparent z-10"></div>
+          <div className="opacity-20 dark:opacity-40">
+            <ModelViewer className="w-full h-full" />
+          </div>
+        </div>
+      </div>
 
-              <div className="mt-10 flex flex-col sm:flex-row items-center justify-center gap-4">
-                <form id='my-form' onSubmit={handleSubmit} className='flex gap-2 flex-col sm:flex-row'>
-                  <input
-                    ref={emailRef} name='email' type="email" id="email" placeholder="Please Enter Your Email" 
-                    className="rounded-md text-black dark:text-white outline-none w-auto sm:w-auto px-3.5 py-2.5 bg-slate-50 dark:bg-gray-800" />
-                  <button
-                    type="submit" 
-                    className="rounded-md max-sm:w-1/2 max-sm:m-auto bg-indigo-600 dark:bg-indigo-800 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-800 dark:hover:bg-indigo-900 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">
-                    Done
-                  </button>
-                </form>
+      {/* Main Content */}
+      <div className="relative z-10 flex items-center justify-center min-h-screen px-4 sm:px-6 lg:px-8">
+        <div className="max-w-4xl mx-auto text-center">
+          
+          {/* Hero Section */}
+          <div className={`transition-all duration-1000 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
+            
+            {/* Main Title */}
+            <div className="space-y-6 mb-12">
+              <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold tracking-tight text-gray-800 dark:text-gray-300">
+                <span className="block">Welcome! I'm</span>
+                <span className="block bg-gradient-to-r from-[#279AF1] to-blue-400 bg-clip-text text-transparent">
+                  Dev Mittal
+                </span>
+              </h1>
+            </div>
+
+            {/* Description */}
+            <div className={`transition-all duration-1000 delay-300 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
+              <div className="max-w-3xl mx-auto space-y-6 mb-12">
+                <p className="text-xl lg:text-2xl text-gray-700 dark:text-gray-300 leading-relaxed">
+                  I'm passionate about building innovative solutions 💡, exploring new technologies, and bringing ideas to life ✨. Whether you're here to collaborate 🤝, get inspired, or just say hi 👋, I'd love to hear from you. Let's connect and make something amazing happen!
+                </p>
+              </div>
+            </div>
+
+            {/* Contact Form */}
+            <div className={`transition-all duration-1000 delay-500 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
+              <div className="max-w-md mx-auto">
+                <div className="bg-white/20 dark:bg-white/10 backdrop-blur-lg border border-white/30 dark:border-white/20 rounded-2xl p-8">
+                  <h3 className="text-xl font-semibold text-gray-800 dark:text-gray-100 mb-6">
+                    Let's Connect! 💬
+                  </h3>
+                  
+                  <form onSubmit={handleSubmit} className="space-y-4">
+                    <div>
+                      <input
+                        ref={emailRef}
+                        name='email'
+                        type="email"
+                        id="email"
+                        placeholder="Please Enter Your Email"
+                        className="w-full px-4 py-3 rounded-xl bg-slate-50 dark:bg-gray-800 border border-gray-200 dark:border-gray-700 text-black dark:text-white placeholder-gray-500 dark:placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-[#279AF1]/50 focus:border-[#279AF1]/50 transition-all duration-300"
+                      />
+                    </div>
+                    
+                    <button
+                      type="submit"
+                      className="w-full px-6 py-3 bg-gradient-to-r from-[#279AF1] to-blue-500 hover:from-[#1e80d1] hover:to-blue-600 text-white font-semibold rounded-xl transition-all duration-300 transform hover:scale-105 hover:shadow-lg active:scale-95 focus:outline-none focus:ring-2 focus:ring-[#279AF1]/50"
+                    >
+                      Done
+                    </button>
+                  </form>
+                </div>
               </div>
             </div>
           </div>
         </div>
-        {/* <img src='/myimg.svg' alt='myimg'
-          className="
-          absolute 
-          animate-appear
-          transition-shadow
-          top-0 
-          right-0
-          w-auto 
-          h-auto 
-          -z-10
-        " /> */}
-        </div>
-        <div className='absolute w-full -z-10 animate-appear top-0'>
-          <ModelViewer className="w-full h-auto sm:w-3/4 md:w-1/2 lg:w-1/3 xl:w-1/4 mx-auto" />
-        </div>
-    </>
+      </div>
+    </div>
   );
 }
 

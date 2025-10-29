@@ -6,6 +6,7 @@ import useTheme from '../../contexts/theme';
 function Header() {
   const {theme, lightTheme, darkTheme } = useTheme();
   const [isDarkMode, setIsDarkMode] = useState(false);
+  const [scrolled, setScrolled] = useState(false);
 
   useEffect(() => {
     if(theme === 'dark') {
@@ -15,8 +16,21 @@ function Header() {
       setIsDarkMode(false);
     }
   },[theme])
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setScrolled(window.scrollY > 20);
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, [])
   return (
-<header className="shadow-lg top-0 max-w-[1440px] bg-[#F7F7FF] dark:bg-[#2d2d2d] w-full mx-auto mt-4 pb-1 backdrop-blur-md rounded-3xl">
+<header className={`sticky top-0 z-50 max-w-[1440px] w-full mx-auto mt-4 pb-1 backdrop-blur-md rounded-3xl transition-all duration-300 ${
+  scrolled 
+    ? 'shadow-2xl bg-[#F7F7FF]/95 dark:bg-[#2d2d2d]/95' 
+    : 'shadow-lg bg-[#F7F7FF] dark:bg-[#2d2d2d]'
+}`}>
   <nav className="border-gray-200 dark:border-gray-700 px-4 lg:px-6 py-2.5 rounded-full">
     <div className="flex flex-nowrap justify-between items-center mx-auto overflow-hidden">
       <div className='flex items-center rounded-lg'>
@@ -60,7 +74,11 @@ function Header() {
         <NavLink
           to="/"
           className={({ isActive }) =>
-            `rounded-lg ${isActive ? 'text-[#EA526F]' : 'text-gray-600 dark:text-gray-300'} px-2 pr-2 py-2 cursor-pointer`
+            `rounded-lg transition-all duration-300 font-medium ${
+              isActive 
+                ? 'text-[#EA526F] font-semibold' 
+                : 'text-gray-600 dark:text-gray-300 hover:text-[#EA526F] dark:hover:text-[#EA526F]'
+            } px-2 pr-2 py-2 cursor-pointer`
           }
         >
           Home
@@ -70,7 +88,11 @@ function Header() {
         <NavLink
           to="/projects"
           className={({ isActive }) =>
-            `rounded-lg ${isActive ? 'text-[#EA526F]' : 'text-gray-600 dark:text-gray-300'} px-2 pr-2 py-2 cursor-pointer`
+            `rounded-lg transition-all duration-300 font-medium ${
+              isActive 
+                ? 'text-[#EA526F] font-semibold' 
+                : 'text-gray-600 dark:text-gray-300 hover:text-[#EA526F] dark:hover:text-[#EA526F]'
+            } px-2 pr-2 py-2 cursor-pointer`
           }
         >
           Projects
@@ -80,7 +102,11 @@ function Header() {
         <NavLink
           to="/about-me"
           className={({ isActive }) =>
-            `rounded-lg ${isActive ? 'text-[#EA526F]' : 'text-gray-600 dark:text-gray-300'} px-2 pr-2 py-2 cursor-pointer`
+            `rounded-lg transition-all duration-300 font-medium ${
+              isActive 
+                ? 'text-[#EA526F] font-semibold' 
+                : 'text-gray-600 dark:text-gray-300 hover:text-[#EA526F] dark:hover:text-[#EA526F]'
+            } px-2 pr-2 py-2 cursor-pointer`
           }
         >
           About
@@ -90,7 +116,11 @@ function Header() {
         <NavLink
           to="/connect"
           className={({ isActive }) =>
-            `rounded-lg ${isActive ? 'text-[#EA526F]' : 'text-gray-600 dark:text-gray-300'} px-2 pr-2 py-2 cursor-pointer`
+            `rounded-lg transition-all duration-300 font-medium ${
+              isActive 
+                ? 'text-[#EA526F] font-semibold' 
+                : 'text-gray-600 dark:text-gray-300 hover:text-[#EA526F] dark:hover:text-[#EA526F]'
+            } px-2 pr-2 py-2 cursor-pointer`
           }
         >
           Connect
@@ -108,7 +138,7 @@ function Header() {
       onChange={theme === 'light' ? darkTheme : lightTheme}
       size={32}
     />
-            <button className="rounded-[15px] bg-[#279AF1] dark:bg-blue-500 hover:bg-[#4492f9] dark:hover:bg-blue-600 px-4 py-2 text-white font-semibold">
+            <button className="rounded-[15px] bg-[#279AF1] dark:bg-blue-500 hover:bg-[#4492f9] dark:hover:bg-blue-600 px-4 py-2 text-white font-semibold transition-all duration-300 transform hover:scale-105 hover:shadow-lg active:scale-95">
               <Link 
                 // to="https://drive.google.com/file/d/1-ZNWtE8rRgeYEYxBLrwP4YjrkAcueGnv/view?usp=sharing" 
                 to="https://drive.google.com/file/d/1koEibgDYRp0z6lc_f53GH8bmVNcmzEej/view?usp=sharing"
